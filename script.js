@@ -6,7 +6,7 @@ searchButton.addEventListener('click', () => {
     apiTitle.textContent = 'Memuatkan data API...';
     apiResults.innerHTML = '';
 
-    fetch('https://jsonplaceholder.typicode.com')
+    fetch('https://jsonplaceholder.typicode.com/posts')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP ${response.status}`);
